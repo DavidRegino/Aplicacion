@@ -1,0 +1,26 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1709690982
+button.png::CompressedTexture2D::1169298611927355728::1628899660::1709687662::1::::<><>::
+default_env.tres::Environment::2499690485154921058::1709690808::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1628899660::0::1::::<><>::
+Game.gd::GDScript::-1::1709687645::0::1::::<>Control<>::
+Game.tscn::PackedScene::3282333974460338395::1709690808::0::1::::<><>::uid://bhlwpiu01q6i7::::res://imagenes/brain-512758_640.webp<>res://Game.gd
+icon.png::CompressedTexture2D::7723976153364471723::1628899660::1709687662::1::::<><>::
+MainMenu.gd::GDScript::-1::1709687645::0::1::::<>Control<>::
+MainMenu.tscn::PackedScene::7563642099387724174::1709690808::0::1::::<><>::res://MainMenu.gd
+MenuBackground.tscn::PackedScene::-1::1709687645::0::1::::<><>::res://addons/cloud/Cloud.gdshader<>res://addons/cloud/CageMesh.tres<>res://addons/cloud/Cloud.gd
+Tourney-Light.ttf::FontFile::8284921120109748429::1628899660::1709687662::1::::<><>::
+::res://imagenes/::1709690795
+brain-512758_640.webp::CompressedTexture2D::2901813757457605740::1709690793::1709690795::1::::<><>::
+manguito.webp::CompressedTexture2D::7426981729847786128::1709688747::1709688749::1::::<><>::
+::res://Pictures/::1709687717
+asdas.png::CompressedTexture2D::6832707603439017069::1709687716::1709687717::1::::<><>::
+descuento.png::CompressedTexture2D::8264938947250750899::1709687716::1709687717::1::::<><>::
+Descuentoo.png::CompressedTexture2D::5078733976830472170::1709687716::1709687717::1::::<><>::
+desktop.ini::TextFile::-1::1709687716::0::1::::<><>::
+::res://Pictures/Camera Roll/::1709687716
+desktop.ini::TextFile::-1::1709687716::0::1::::<><>::
+::res://Pictures/Saved Pictures/::1709687716
+desktop.ini::TextFile::-1::1709687716::0::1::::<><>::
+::res://sonidos/::1709690991
+metal-pipe-falling-sound-effect-made-with-Voicemod.mp3::AudioStreamMP3::1592637310521525159::1709690969::1709690992::1::::<><>::
