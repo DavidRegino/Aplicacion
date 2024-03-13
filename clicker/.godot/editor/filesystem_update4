@@ -1,5 +1,3 @@
 res://default_env.tres
 res://MainMenu.tscn
 res://Game.tscn
-res://Game.gd
-res://Click.gd
