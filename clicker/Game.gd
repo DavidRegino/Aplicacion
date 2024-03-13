@@ -2,7 +2,7 @@ extends Control
 
 var score = 0
 var add = 1
-var addpersec = 1
+var addpersec = 0
 var combo = 0
 
 
@@ -133,3 +133,22 @@ func _on_CPC5_pressed():
 		add = add + 500 #Add CPC
 		$VBoxContainer/CPC5.text = str("+500 CPC [", CPCRequirement5, "]") #Combine multiple strings to show the required clicks.
 		$Label3.text = str("CPC:", add)
+
+
+func _on_boton_pressed():
+	$ClickTimer.start()
+	if combo < 25: # Make sure combo doesn't get too high
+		combo += 1
+	if combo >= 25: # Enable the other sparks when combo is over 25
+		$ComboEffect3.emitting = true # More Sparks
+	if combo > 15: # Enable the sparks when combo is over 15
+		$ComboEffect2.emitting = true # Sparks
+	if combo > 10: # Enable the effects when combo is over 10
+		score += round(add * (combo / 10))
+		$ComboEffect.emitting = true
+	if combo <= 10: # No combo
+		score += add
+
+
+func _on_tanganana_pressed():
+	get_tree().change_scene_to_file("res://tangananica.tscn")

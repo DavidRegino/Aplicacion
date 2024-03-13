@@ -1,2 +1,4 @@
-AudioStreamPlayer
 Button
+Label
+VBoxContainer
+AudioStreamPlayer
