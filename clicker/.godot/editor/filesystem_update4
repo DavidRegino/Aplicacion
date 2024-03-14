@@ -1,6 +1,5 @@
 res://default_env.tres
 res://MainMenu.tscn
 res://Game.tscn
-res://Game.gd
 res://tangananica.tscn
-res://tangananica.gd
+res://foquito.tscn

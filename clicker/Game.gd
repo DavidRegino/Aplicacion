@@ -1,5 +1,6 @@
 extends Control
 
+var foquito = preload("res://foquito.tscn")
 var score = 0
 var add = 1
 var addpersec = 0
@@ -28,24 +29,8 @@ func _on_CPC1_pressed():
 		score -= CPCRequirement
 		CPCRequirement = round(CPCRequirement * 1.4)
 		add = add + 1 #Add CPC
-		$VBoxContainer/CPC1.text = str("+1 CPC [", CPCRequirement, "]") #Combine multiple strings to show the required clicks.
+		$VBoxContainer2/CPC1.text = str("+1 CPC [", CPCRequirement, "]") #Combine multiple strings to show the required clicks.
 		$Label3.text = str("CPC:", add)
-
-
-func _on_Click_pressed():
-	$ClickTimer.start()
-	if combo < 25: # Make sure combo doesn't get too high
-		combo += 1
-	if combo >= 25: # Enable the other sparks when combo is over 25
-		$ComboEffect3.emitting = true # More Sparks
-	if combo > 15: # Enable the sparks when combo is over 15
-		$ComboEffect2.emitting = true # Sparks
-	if combo > 10: # Enable the effects when combo is over 10
-		score += round(add * (combo / 10))
-		$ComboEffect.emitting = true
-	if combo <= 10: # No combo
-		score += add
-
 
 func _on_CPS1_pressed():
 	if score >= CPSRequirement:
@@ -77,7 +62,7 @@ func _on_CPC2_pressed():
 		score -= CPCRequirement2
 		CPCRequirement2 = round(CPCRequirement2 * 1.3)
 		add = add + 5 #Add CPC
-		$VBoxContainer/CPC2.text = str("+5 CPC [", CPCRequirement2, "]") #Combine multiple strings to show the required clicks.
+		$VBoxContainer2/CPC2.text = str("+5 CPC [", CPCRequirement2, "]") #Combine multiple strings to show the required clicks.
 		$Label3.text = str("CPC:", add)
 
 
@@ -95,7 +80,7 @@ func _on_CPC3_pressed():
 		score -= CPCRequirement3
 		CPCRequirement3 = round(CPCRequirement3 * 1.2)
 		add = add + 20 #Add CPC
-		$VBoxContainer/CPC3.text = str("+20 CPC [", CPCRequirement3, "]") #Combine multiple strings to show the required clicks.
+		$VBoxContainer2/CPC3.text = str("+20 CPC [", CPCRequirement3, "]") #Combine multiple strings to show the required clicks.
 		$Label3.text = str("CPC:", add)
 
 
@@ -113,7 +98,7 @@ func _on_CPC4_pressed():
 		score -= CPCRequirement4
 		CPCRequirement4 = round(CPCRequirement4 * 1.1)
 		add = add + 125 #Add CPC
-		$VBoxContainer/CPC4.text = str("+125 CPC [", CPCRequirement4, "]") #Combine multiple strings to show the required clicks.
+		$VBoxContainer2/CPC4.text = str("+125 CPC [", CPCRequirement4, "]") #Combine multiple strings to show the required clicks.
 		$Label3.text = str("CPC:", add)
 
 
@@ -131,24 +116,24 @@ func _on_CPC5_pressed():
 		score -= CPCRequirement5
 		CPCRequirement5 = CPCRequirement5
 		add = add + 500 #Add CPC
-		$VBoxContainer/CPC5.text = str("+500 CPC [", CPCRequirement5, "]") #Combine multiple strings to show the required clicks.
+		$VBoxContainer2/CPC5.text = str("+500 CPC [", CPCRequirement5, "]") #Combine multiple strings to show the required clicks.
 		$Label3.text = str("CPC:", add)
 
 
 func _on_boton_pressed():
-	$ClickTimer.start()
-	if combo < 25: # Make sure combo doesn't get too high
-		combo += 1
-	if combo >= 25: # Enable the other sparks when combo is over 25
-		$ComboEffect3.emitting = true # More Sparks
-	if combo > 15: # Enable the sparks when combo is over 15
-		$ComboEffect2.emitting = true # Sparks
-	if combo > 10: # Enable the effects when combo is over 10
-		score += round(add * (combo / 10))
-		$ComboEffect.emitting = true
-	if combo <= 10: # No combo
-		score += add
-
+	var spawn_de_foquito = foquito.instantiate()
+	# Obtener las coordenadas del mouse en relación con el mundo
+	var mouse_position = get_global_mouse_position()
+	
+	add_child(spawn_de_foquito) #aparece el foco
+	
+	# Establecer la posición del cuerpo rígido de la galleta en las coordenadas del mouse
+	spawn_de_foquito.global_position = mouse_position
+	  # Aplicar fuerza inicial a la galleta (opcional)
+	spawn_de_foquito.get_node("RigidBody2D").apply_impulse(Vector2(0, -200), Vector2.ZERO)
+	# Iniciar temporizador para desaparición de la galleta
+	spawn_de_foquito.get_node("Timer").start()
+	score += add
 
 func _on_tanganana_pressed():
 	get_tree().change_scene_to_file("res://tangananica.tscn")
