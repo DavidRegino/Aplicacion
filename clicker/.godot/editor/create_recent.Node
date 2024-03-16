@@ -1,8 +1,8 @@
+Label
 AnimationPlayer
 Timer
 Sprite2D
 RigidBody2D
 Button
-Label
 VBoxContainer
 AudioStreamPlayer

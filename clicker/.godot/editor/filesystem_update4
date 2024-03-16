@@ -1,6 +1,18 @@
 res://default_env.tres
+res://foquito.tscn
 res://MainMenu.tscn
 res://Game.tscn
 res://tangananica.tscn
-res://foquito.tscn
 res://foquito.gd
+res://puntos.gd
+res://puntos.tscn
+res://Game.gd
+res://escenas perronas/Game.tscn
+res://escenas perronas/tangananica.tscn
+res://tangananica.gd
+res://MainMenu.gd
+res://escenas perronas/MainMenu.tscn
+res://escenas perronas/foquito.tscn
+res://scripts estupidos/Game.gd
+res://datos.gd
+res://scripts estupidos/GameData.gd
