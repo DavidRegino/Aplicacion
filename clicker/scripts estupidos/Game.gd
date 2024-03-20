@@ -1,7 +1,9 @@
 extends Control
 
+const GameData = preload("res://scripts estupidos/GameData.gd")
+
 var foquito = preload("res://escenas perronas/foquito.tscn")
-var score = 0
+var score = GameData._get_instance().get_score()
 var add = 1
 var addpersec = 0
 var combo = 0
@@ -11,7 +13,8 @@ func _on_Timer_timeout():
 	score += addpersec #After the Timer resets, add the add per second to the score.
 
 func _process(_delta):
-	$Score.text = str("iq: ", score) #Change the text to the current score every frame.
+	pass
+	#$Score.text = str("iq: ", score) #Change the text to the current score every frame.
 
 var CPSRequirement = 20 #Clicks required to upgrade Clicks Per Second
 var CPCRequirement = 20 #Clicks required to upgrade Clicks Per Click
@@ -25,28 +28,26 @@ var CPSRequirement5 = 200000 #Clicks required to upgrade Clicks Per Second #5
 var CPCRequirement5 = 200000 #Clicks required to upgrade Clicks Per Click #5
 
 func _on_CPC1_pressed():
-	if score >= CPCRequirement:
-		score -= CPCRequirement
+	var game_data = GameData._get_instance()
+	print(game_data.score)
+	var game_data_instance = $GameDataNode
+	if game_data.score >= CPCRequirement:
+		game_data.score -= CPCRequirement
 		CPCRequirement = round(CPCRequirement * 1.4)
 		add = add + 1 #Add CPC
+		game_data_instance.add_score(add)
+		game_data_instance.increase_CPC_count()
 		$VBoxContainer2/CPC1.text = str("+1 CPC [", CPCRequirement, "]") #Combine multiple strings to show the required clicks.
 		$Label3.text = str("CPC:", add)
 
 func _on_CPS1_pressed():
+	print(score)
 	if score >= CPSRequirement:
 		score -= CPSRequirement
 		CPSRequirement = round(CPSRequirement * 1.4)
 		addpersec = addpersec + 1 #Add CPS.
 		$VBoxContainer/CPS1.text = str("+1 CPS [", CPSRequirement, "]") #Combine multiple strings to show the required clicks.
 		$Label2.text = str("CPS:", addpersec)
-
-
-func _on_ClickTimer_timeout():
-	combo = 0
-	$ComboEffect.emitting = false # Effects
-	$ComboEffect2.emitting = false # Sparks
-	$ComboEffect3.emitting = false # More Sparks
-
 
 func _on_CPS2_pressed():
 	if score >= CPSRequirement2:
@@ -134,10 +135,14 @@ func _on_boton_pressed():
 	# Iniciar temporizador para desaparición de la galleta
 	spawn_de_foquito.get_node("Timer").start()
 	
-	var game_data_instance = GameData.new()
-	var game_data = game_data_instance._get_instance()
-	game_data.dinero += 1
-	score += add
+	var game_data = GameData._get_instance()
+	#var game_data = game_data_instance._get_instance()
+	game_data.score += 1
+	actualizar_texto_label(game_data.score)
+	
+func actualizar_texto_label(nuevo_valor_score):
+	$Score.text = "IQ: " + str(nuevo_valor_score)
+	#score += add
 	
 
 	

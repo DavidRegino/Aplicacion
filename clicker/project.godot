@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Clicker Game"
+config/name="IQ clicker"
 run/main_scene="res://escenas perronas/MainMenu.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
@@ -21,10 +21,6 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/resizable=false
 window/size/borderless=true
-
-[editor_plugins]
-
-enabled=PackedStringArray()
 
 [physics]
 

@@ -1,5 +1,7 @@
 res://default_env.tres
-res://escenas perronas/MainMenu.tscn
 res://escenas perronas/Game.tscn
+res://scripts estupidos/Game.gd
+res://scripts estupidos/GameData.gd
+res://escenas perronas/MainMenu.tscn
 res://escenas perronas/tangananica.tscn
 res://escenas perronas/foquito.tscn
