@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://d2dmdf0i5cwhm"]
 
 [ext_resource type="Script" path="res://scripts estupidos/foquito.gd" id="1_baqkm"]
-[ext_resource type="Texture2D" uid="uid://bubvgd7grkkve" path="res://imagenes/Light-Bulb-Free-PNG-Image.png" id="2_3wdjf"]
+[ext_resource type="Texture2D" uid="uid://bubvgd7grkkve" path="res://imagenes/foquito.png" id="2_3wdjf"]
 
 [sub_resource type="Animation" id="Animation_wi0dq"]
 resource_name = "opacidad"

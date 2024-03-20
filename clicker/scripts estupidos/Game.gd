@@ -1,9 +1,9 @@
 extends Control
 
-const GameData = preload("res://scripts estupidos/GameData.gd")
+const wasamamaya = preload("res://scripts estupidos/wasamamaya.gd")
 
 var foquito = preload("res://escenas perronas/foquito.tscn")
-var score = GameData._get_instance().get_score()
+var score = wasamamaya._get_instance().get_score()
 var add = 1
 var addpersec = 0
 var combo = 0
@@ -14,7 +14,7 @@ func _on_Timer_timeout():
 
 func _process(_delta):
 	pass
-	#$Score.text = str("iq: ", score) #Change the text to the current score every frame.
+	#$Score.text = str("IQ: ", score) #Change the text to the current score every frame.
 
 var CPSRequirement = 20 #Clicks required to upgrade Clicks Per Second
 var CPCRequirement = 20 #Clicks required to upgrade Clicks Per Click
@@ -28,18 +28,20 @@ var CPSRequirement5 = 200000 #Clicks required to upgrade Clicks Per Second #5
 var CPCRequirement5 = 200000 #Clicks required to upgrade Clicks Per Click #5
 
 func _on_CPC1_pressed():
-	var game_data = GameData._get_instance()
+	var game_data = wasamamaya._get_instance()
 	print(game_data.score)
-	var game_data_instance = $GameDataNode
+	
+	var game_data_instance = $wasamamayaNode
+	#var CPC_count =0 #wasamamaya.get(CPC_count)
 	if game_data.score >= CPCRequirement:
 		game_data.score -= CPCRequirement
 		CPCRequirement = round(CPCRequirement * 1.4)
 		add = add + 1 #Add CPC
-		game_data_instance.add_score(add)
-		game_data_instance.increase_CPC_count()
+		game_data.CPC_count += 1
 		$VBoxContainer2/CPC1.text = str("+1 CPC [", CPCRequirement, "]") #Combine multiple strings to show the required clicks.
 		$Label3.text = str("CPC:", add)
-
+		actualizar_texto_label(game_data.score)
+		print(game_data.CPC_count)
 func _on_CPS1_pressed():
 	print(score)
 	if score >= CPSRequirement:
@@ -135,9 +137,9 @@ func _on_boton_pressed():
 	# Iniciar temporizador para desaparición de la galleta
 	spawn_de_foquito.get_node("Timer").start()
 	
-	var game_data = GameData._get_instance()
+	var game_data = wasamamaya._get_instance()
 	#var game_data = game_data_instance._get_instance()
-	game_data.score += 1
+	game_data.score += game_data.CPC_count
 	actualizar_texto_label(game_data.score)
 	
 func actualizar_texto_label(nuevo_valor_score):

@@ -1,9 +1,9 @@
+Button
+VBoxContainer
 GameData
 Label
 AnimationPlayer
 Timer
 Sprite2D
 RigidBody2D
-Button
-VBoxContainer
 AudioStreamPlayer
