@@ -3,9 +3,5 @@ res://escenas perronas/MainMenu.tscn
 res://escenas perronas/Game.tscn
 res://escenas perronas/tangananica.tscn
 res://escenas perronas/foquito.tscn
-res://scripts estupidos/Game.gd
-res://scripts estupidos/GameData.gd
 res://escenas perronas/tienda.tscn
-res://escenas perronas/tienda.gd
-res://scripts estupidos/wasamamaya.gd
-res://scripts estupidos/tangananica.gd
+res://scripts estupidos/Game.gd

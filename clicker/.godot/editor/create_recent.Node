@@ -1,7 +1,9 @@
+MeshInstance2D
+Container
 Button
+Label
 VBoxContainer
 GameData
-Label
 AnimationPlayer
 Timer
 Sprite2D
