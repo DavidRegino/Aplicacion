@@ -1,3 +1,4 @@
+Timer
 MeshInstance2D
 Container
 Button
@@ -5,7 +6,6 @@ Label
 VBoxContainer
 GameData
 AnimationPlayer
-Timer
 Sprite2D
 RigidBody2D
 AudioStreamPlayer

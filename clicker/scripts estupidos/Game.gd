@@ -4,6 +4,10 @@ const wasamamaya = preload("res://scripts estupidos/wasamamaya.gd")
 
 var foquito = preload("res://escenas perronas/foquito.tscn")
 
+func _process(delta):
+	var game_data = wasamamaya._get_instance()
+	$Score.text = "IQ: " + str(game_data.score)
+
 
 func _on_boton_pressed():
 	var spawn_de_foquito = foquito.instantiate()
