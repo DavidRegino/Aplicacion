@@ -8,7 +8,7 @@ class_name GameData
 static var instance = null
 
 # Variables globales
-var score = 150
+var score = 90
 var CPC_count = 1
 var CPS_count = 0
 

@@ -1,137 +1,101 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712713688
-button.png::CompressedTexture2D::1169298611927355728::1710984716::1710984716::1::::<><>::
-default_env.tres::Environment::2499690485154921058::1712712366::0::1::::<><>::
-export_presets.cfg::TextFile::-1::1710984716::0::1::::<><>::
-foquito.gd::GDScript::-1::1710984716::0::1::::<>RigidBody2D<>::
-foquito.tscn::PackedScene::9061288225503808002::1710984716::0::1::::<><>::res://foquito.gd<>uid://bubvgd7grkkve::::res://imagenes/foquito.png
-Game.gd::GDScript::-1::1710984716::0::1::::<>Control<>::
-Game.tscn::PackedScene::3282333974460338395::1710984716::0::1::::<><>::uid://bubvgd7grkkve::::res://imagenes/foquito.png<>uid://bhlwpiu01q6i7::::res://imagenes/brain-512758_640.webp<>res://Game.gd
-icon.png::CompressedTexture2D::7723976153364471723::1710984716::1710984716::1::::<><>::
-MainMenu.gd::GDScript::-1::1710984716::0::1::::<>Control<>::
-MainMenu.tscn::PackedScene::7563642099387724174::1710984716::0::1::::<><>::res://MainMenu.gd
-MenuBackground.tscn::PackedScene::-1::1710984716::0::1::::<><>::res://addons/cloud/Cloud.gdshader<>res://addons/cloud/CageMesh.tres<>res://addons/cloud/Cloud.gd
-README.md::TextFile::-1::1710984716::0::1::::<><>::
-tangananica.gd::GDScript::-1::1710984716::0::1::::<>Control<>::
-tangananica.tscn::PackedScene::5974399911489427578::1710984716::0::1::::<><>::res://tangananica.gd
-Tourney-Light.ttf::FontFile::8284921120109748429::1710984716::1710984716::1::::<><>::
-::res://addons/::1710984716
-::res://addons/TemplateSaver/::1710984716
-plugin.cfg::TextFile::-1::1710984716::0::1::::<><>::
-README.md::TextFile::-1::1710984716::0::1::::<><>::
-::res://addons/TemplateSaver/Code/::1710984716
-AddButton.gd::GDScript::-1::1710984716::0::1::::<>TextureButton<>::
-BIDoubleClick.gd::GDScript::-1::1710984716::0::1::::<>MarginContainer<>::
-CloseSettings.gd::GDScript::-1::1710984716::0::1::::<>TextureButton<>::
-Dialog.gd::GDScript::-1::1710984716::0::1::::<>Node<>::
-DoubleClick.gd::GDScript::-1::1710984716::0::1::::<>MarginContainer<>::
-DragSettings.gd::GDScript::-1::1710984716::0::1::::<>ColorRect<>::
-OpenSettings.gd::GDScript::-1::1710984716::0::1::::<>TextureButton<>::
-README.md::TextFile::-1::1710984716::0::1::::<><>::
-RemoveScene.gd::GDScript::-1::1710984716::0::1::::<>TextureButton<>::
-SettingsManager.gd::GDScript::-1::1710984716::0::1::::<>VBoxContainer<>::
-TemplateData.gd::GDScript::-1::1710984716::0::1::::<>Node<>::
-TemplateSaver.gd::GDScript::-1::1710984716::0::1::::<>EditorPlugin<>::
-::res://addons/TemplateSaver/Images/::1711033751
-close_icon_blue.png::CompressedTexture2D::7802184834243750226::1710984716::1711033751::1::::<><>::
-close_icon_gray.png::CompressedTexture2D::2322558540994741961::1710984716::1711033751::1::::<><>::
-close_icon_red.png::CompressedTexture2D::1991167343579626587::1710984716::1711033751::1::::<><>::
-PackedScene.png::CompressedTexture2D::3416245684906078277::1710984716::1711033750::1::::<><>::
-plus blue.png::CompressedTexture2D::2785220532879809789::1710984716::1711033750::1::::<><>::
-plus gray.png::CompressedTexture2D::3510161175217123506::1710984716::1711033750::1::::<><>::
-plus white.png::CompressedTexture2D::6125742302848577078::1710984716::1711033751::1::::<><>::
-plus.png::CompressedTexture2D::1436573462264774797::1710984716::1711033751::1::::<><>::
-red-trash-can-icon.png::CompressedTexture2D::5176883237673100964::1710984716::1711033751::1::::<><>::
-settings_cog_blue.png::CompressedTexture2D::1810096938157068414::1710984716::1711033751::1::::<><>::
-settings_cog_gray.png::CompressedTexture2D::5142865587980473918::1710984716::1711033751::1::::<><>::
-settings_cog_icon_178923.png::CompressedTexture2D::786791895287338477::1710984716::1711033751::1::::<><>::
-::res://addons/TemplateSaver/Scenes/::1710984716
-BISceneUI.tscn::PackedScene::2302098533534967082::1710984716::0::1::::<><>::res://addons/TemplateSaver/Code/DoubleClick.gd<>uid://bow4cj2twp8y0::::res://addons/TemplateSaver/Images/PackedScene.png
-FileManager.tscn::PackedScene::942820277370521147::1710984716::0::1::::<><>::
-SceneUI.tscn::PackedScene::1514595721115329238::1710984716::0::1::::<><>::res://addons/TemplateSaver/Code/DoubleClick.gd<>uid://bow4cj2twp8y0::::res://addons/TemplateSaver/Images/PackedScene.png<>res://addons/TemplateSaver/Code/RemoveScene.gd<>uid://cf0yrmhsicvjo::::res://addons/TemplateSaver/Images/red-trash-can-icon.png
-SettingsMenu.tscn::PackedScene::5184458478850087880::1710984716::0::1::::<><>::res://addons/TemplateSaver/Code/DragSettings.gd<>res://addons/TemplateSaver/Code/SettingsManager.gd<>uid://3msh86x0yl68::::res://addons/TemplateSaver/Images/close_icon_red.png<>uid://djfo3yavg6eva::::res://addons/TemplateSaver/Images/close_icon_blue.png<>uid://8dcg2arthixt::::res://addons/TemplateSaver/Images/close_icon_gray.png<>res://addons/TemplateSaver/Code/CloseSettings.gd
-TemplateDock.tscn::PackedScene::2929206036376571123::1710984716::0::1::::<><>::uid://ctjmc0lvqchfa::::res://addons/TemplateSaver/Images/plus white.png<>uid://bfxgf7ub3w8dd::::res://addons/TemplateSaver/Images/plus blue.png<>uid://bqal3va04s6m5::::res://addons/TemplateSaver/Images/plus gray.png<>res://addons/TemplateSaver/Code/AddButton.gd<>uid://72fhx3u2t68e::::res://addons/TemplateSaver/Scenes/BISceneUI.tscn<>uid://lhel21v2ygf2::::res://addons/TemplateSaver/Images/settings_cog_icon_178923.png<>res://addons/TemplateSaver/Code/OpenSettings.gd<>uid://013bdefyu5u5::::res://addons/TemplateSaver/Images/settings_cog_blue.png<>res://addons/TemplateSaver/Code/BIDoubleClick.gd<>uid://cfjiilbwrgkru::::res://addons/TemplateSaver/Images/settings_cog_gray.png
-::res://addons/TemplateSaver/Scenes/Templates/::1710984716
-::res://archivo de guardado/::1710984716
-savedata.json::JSON::-1::1710984716::0::1::::<><>::
-::res://backups de escenas/::1710984716
-foquito.tscn::PackedScene::9061288225503808002::1710984716::0::1::::<><>::res://scripts estupidos/foquito.gd<>uid://bubvgd7grkkve::::res://imagenes/foquito.png
-Game.tscn::PackedScene::3282333974460338395::1710984716::0::1::::<><>::res://scripts estupidos/Game.gd<>uid://bhlwpiu01q6i7::::res://imagenes/brain-512758_640.webp<>res://scripts estupidos/wasamamaya.gd
-MainMenu.tscn::PackedScene::7563642099387724174::1710984716::0::1::::<><>::res://scripts estupidos/MainMenu.gd
-MenuBackground.tscn::PackedScene::-1::1710984716::0::1::::<><>::res://addons/cloud/Cloud.gdshader<>res://addons/cloud/CageMesh.tres<>res://addons/cloud/Cloud.gd
-tangananica.tscn::PackedScene::5974399911489427578::1710984716::0::1::::<><>::res://scripts estupidos/tangananica.gd
-tienda.gd::GDScript::-1::1710984716::0::1::::<>Control<>::
-tienda.tscn::PackedScene::8525827653910860108::1710984716::0::1::::<><>::res://backups de scripts/tienda.gd
-::res://escenas perronas/::1712712366
-foquito.tscn::PackedScene::9061288225503808002::1712712292::0::1::::<><>::res://scripts estupidos/foquito.gd<>uid://bubvgd7grkkve::::res://imagenes/Light-Bulb-Free-PNG-Image.png
-Game.tscn::PackedScene::3282333974460338395::1712712292::0::1::::<><>::res://scripts estupidos/Game.gd<>uid://bhlwpiu01q6i7::::res://imagenes/brain-512758_640.webp<>res://scripts estupidos/wasamamaya.gd<>uid://dtp8evakmj5lw::::res://escenas perronas/tienda.tscn
-MainMenu.tscn::PackedScene::7563642099387724174::1712712291::0::1::::<><>::res://scripts estupidos/MainMenu.gd
-MenuBackground.tscn::PackedScene::-1::1710984716::0::1::::<><>::res://addons/cloud/Cloud.gdshader<>res://addons/cloud/CageMesh.tres<>res://addons/cloud/Cloud.gd
-tangananica.tscn::PackedScene::5974399911489427578::1712712292::0::1::::<><>::res://scripts estupidos/tangananica.gd
-tienda.tscn::PackedScene::8525827653910860108::1712712366::0::1::::<><>::res://scripts estupidos/tienda.gd
-::res://fondo/::1710984716
-::res://fondo/iloveimg-converted (3)/::1710984716
-animation-0000.jpg::CompressedTexture2D::6955843680217759869::1710984716::1710984716::1::::<><>::
-animation-0001.jpg::CompressedTexture2D::4640986666465761716::1710984716::1710984716::1::::<><>::
-animation-0002.jpg::CompressedTexture2D::1722472237571784856::1710984716::1710984716::1::::<><>::
-animation-0003.jpg::CompressedTexture2D::6588604671103059212::1710984716::1710984716::1::::<><>::
-animation-0004.jpg::CompressedTexture2D::2154702049924817889::1710984716::1710984716::1::::<><>::
-animation-0005.jpg::CompressedTexture2D::3338076742459560830::1710984716::1710984716::1::::<><>::
-animation-0006.jpg::CompressedTexture2D::2683588803200104370::1710984716::1710984716::1::::<><>::
-animation-0007.jpg::CompressedTexture2D::8167206985708116513::1710984716::1710984716::1::::<><>::
-animation-0008.jpg::CompressedTexture2D::636165263038054749::1710984716::1710984716::1::::<><>::
-animation-0009.jpg::CompressedTexture2D::1283127442205716892::1710984716::1710984716::1::::<><>::
-animation-0010.jpg::CompressedTexture2D::2140870001350674540::1710984716::1710984716::1::::<><>::
-animation-0011.jpg::CompressedTexture2D::6458660348379086056::1710984716::1710984716::1::::<><>::
-animation-0012.jpg::CompressedTexture2D::8389111172719407961::1710984716::1710984716::1::::<><>::
-animation-0013.jpg::CompressedTexture2D::3985024490433790232::1710984716::1710984716::1::::<><>::
-animation-0014.jpg::CompressedTexture2D::1246072599554488157::1710984716::1710984716::1::::<><>::
-animation-0015.jpg::CompressedTexture2D::4980174553165300935::1710984716::1710984716::1::::<><>::
-animation-0016.jpg::CompressedTexture2D::2617990333005699924::1710984716::1710984716::1::::<><>::
-animation-0017.jpg::CompressedTexture2D::7964871481293193344::1710984716::1710984716::1::::<><>::
-animation-0018.jpg::CompressedTexture2D::3008952509147711591::1710984716::1710984716::1::::<><>::
-animation-0019.jpg::CompressedTexture2D::8366722994563509469::1710984716::1710984716::1::::<><>::
-animation-0020.jpg::CompressedTexture2D::7799983271813718388::1710984716::1710984716::1::::<><>::
-animation-0021.jpg::CompressedTexture2D::8241634684493928799::1710984716::1710984716::1::::<><>::
-animation-0022.jpg::CompressedTexture2D::4890791815671185772::1710984716::1710984716::1::::<><>::
-animation-0023.jpg::CompressedTexture2D::6921105258633492906::1710984716::1710984716::1::::<><>::
-animation-0024.jpg::CompressedTexture2D::3807347651145554587::1710984716::1710984716::1::::<><>::
-animation-0025.jpg::CompressedTexture2D::6499572552809561895::1710984716::1710984716::1::::<><>::
-animation-0026.jpg::CompressedTexture2D::1107917770266692222::1710984716::1710984716::1::::<><>::
-animation-0027.jpg::CompressedTexture2D::4832688837313302914::1710984716::1710984716::1::::<><>::
-animation-0028.jpg::CompressedTexture2D::2327179547060762428::1710984716::1710984716::1::::<><>::
-animation-0029.jpg::CompressedTexture2D::7418650150742510578::1710984716::1710984716::1::::<><>::
-animation-0030.jpg::CompressedTexture2D::3520247613969483828::1710984716::1710984716::1::::<><>::
-animation-0031.jpg::CompressedTexture2D::78575889978008892::1710984716::1710984716::1::::<><>::
-animation-0032.jpg::CompressedTexture2D::8600046938555189257::1710984716::1710984716::1::::<><>::
-animation-0033.jpg::CompressedTexture2D::1763751254015535129::1710984716::1710984716::1::::<><>::
-animation-0034.jpg::CompressedTexture2D::9144033888089442854::1710984716::1710984716::1::::<><>::
-animation-0035.jpg::CompressedTexture2D::9071141098298140619::1710984716::1710984716::1::::<><>::
-animation-0036.jpg::CompressedTexture2D::7378976080453651877::1710984716::1710984716::1::::<><>::
-animation-0037.jpg::CompressedTexture2D::5860980894633681683::1710984716::1710984716::1::::<><>::
-animation-0038.jpg::CompressedTexture2D::4536890095773204384::1710984716::1710984716::1::::<><>::
-::res://imagenes/::1712709513
-brain-512758_640.webp::CompressedTexture2D::2901813757457605740::1710984716::1710984716::1::::<><>::
-foquito.png::CompressedTexture2D::3793547913118860950::1710984716::1711033751::1::::<><>::
-Light-Bulb-Free-PNG-Image.png::CompressedTexture2D::3793547913118860950::1710984716::1710984716::1::::<><>::
-manguito.webp::CompressedTexture2D::7426981729847786128::1710984716::1710984716::1::::<><>::
-::res://Pictures/::1710984716
-asdas.png::CompressedTexture2D::6832707603439017069::1710984716::1710984716::1::::<><>::
-descuento.png::CompressedTexture2D::8264938947250750899::1710984716::1710984716::1::::<><>::
-Descuentoo.png::CompressedTexture2D::5078733976830472170::1710984716::1710984716::1::::<><>::
-desktop.ini::TextFile::-1::1710984716::0::1::::<><>::
-::res://Pictures/Camera Roll/::1710984716
-desktop.ini::TextFile::-1::1710984716::0::1::::<><>::
-::res://Pictures/Saved Pictures/::1710984716
-desktop.ini::TextFile::-1::1710984716::0::1::::<><>::
-::res://scripts estupidos/::1712712286
-foquito.gd::GDScript::-1::1710984716::0::1::::<>RigidBody2D<>::
-Game.gd::GDScript::-1::1712712231::0::1::::<>Control<>::
-GameData.gd::GDScript::-1::1710984716::0::1::::GameData<>Node<>::
-MainMenu.gd::GDScript::-1::1710984716::0::1::::<>Control<>::
-PuntosManager.gd::GDScript::-1::1710984716::0::1::::<>Node<>::
-tangananica.gd::GDScript::-1::1710984716::0::1::::<>Control<>::
-tienda.gd::GDScript::-1::1712712286::0::1::::<>Control<>::
-wasamamaya.gd::GDScript::-1::1710984716::0::1::::GameData<>Node<>::
-::res://sonidos/::1710984716
-metal-pipe-falling-sound-effect-made-with-Voicemod.mp3::AudioStreamMP3::1592637310521525159::1710984716::1710984716::1::::<><>::
+::res://::1712887142
+button.png::CompressedTexture2D::1169298611927355728::1712714024::1712714024::1::::<><>::
+default_env.tres::Environment::2499690485154921058::1712872812::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1712714024::0::1::::<><>::
+foquito.gd::GDScript::-1::1712714024::0::1::::<>RigidBody2D<>::
+foquito.tscn::PackedScene::9061288225503808002::1712714024::0::1::::<><>::res://foquito.gd<>uid://bubvgd7grkkve::::res://imagenes/foquito.png
+Game.gd::GDScript::-1::1712714024::0::1::::<>Control<>::
+Game.tscn::PackedScene::3282333974460338395::1712714024::0::1::::<><>::uid://bubvgd7grkkve::::res://imagenes/foquito.png<>uid://bhlwpiu01q6i7::::res://imagenes/brain-512758_640.webp<>res://Game.gd
+icon.png::CompressedTexture2D::7723976153364471723::1712714024::1712714024::1::::<><>::
+MainMenu.gd::GDScript::-1::1712714024::0::1::::<>Control<>::
+MainMenu.tscn::PackedScene::7563642099387724174::1712714024::0::1::::<><>::res://MainMenu.gd
+MenuBackground.tscn::PackedScene::-1::1712714024::0::1::::<><>::res://addons/cloud/Cloud.gdshader<>res://addons/cloud/CageMesh.tres<>res://addons/cloud/Cloud.gd
+README.md::TextFile::-1::1712714024::0::1::::<><>::
+tangananica.gd::GDScript::-1::1712714024::0::1::::<>Control<>::
+tangananica.tscn::PackedScene::5974399911489427578::1712714024::0::1::::<><>::res://tangananica.gd
+Tourney-Light.ttf::FontFile::8284921120109748429::1712714024::1712714024::1::::<><>::
+::res://addons/::1712714024
+::res://addons/TemplateSaver/::1712714024
+plugin.cfg::TextFile::-1::1712714024::0::1::::<><>::
+README.md::TextFile::-1::1712714024::0::1::::<><>::
+::res://addons/TemplateSaver/Code/::1712714024
+AddButton.gd::GDScript::-1::1712714024::0::1::::<>TextureButton<>::
+BIDoubleClick.gd::GDScript::-1::1712714024::0::1::::<>MarginContainer<>::
+CloseSettings.gd::GDScript::-1::1712714024::0::1::::<>TextureButton<>::
+Dialog.gd::GDScript::-1::1712714024::0::1::::<>Node<>::
+DoubleClick.gd::GDScript::-1::1712714024::0::1::::<>MarginContainer<>::
+DragSettings.gd::GDScript::-1::1712714024::0::1::::<>ColorRect<>::
+OpenSettings.gd::GDScript::-1::1712714024::0::1::::<>TextureButton<>::
+README.md::TextFile::-1::1712714024::0::1::::<><>::
+RemoveScene.gd::GDScript::-1::1712714024::0::1::::<>TextureButton<>::
+SettingsManager.gd::GDScript::-1::1712714024::0::1::::<>VBoxContainer<>::
+TemplateData.gd::GDScript::-1::1712714024::0::1::::<>Node<>::
+TemplateSaver.gd::GDScript::-1::1712714024::0::1::::<>EditorPlugin<>::
+::res://addons/TemplateSaver/Images/::1712761873
+close_icon_blue.png::CompressedTexture2D::7802184834243750226::1712714024::1712761873::1::::<><>::
+close_icon_gray.png::CompressedTexture2D::2322558540994741961::1712714024::1712761873::1::::<><>::
+close_icon_red.png::CompressedTexture2D::1991167343579626587::1712714024::1712761873::1::::<><>::
+PackedScene.png::CompressedTexture2D::3416245684906078277::1712714024::1712761873::1::::<><>::
+plus blue.png::CompressedTexture2D::2785220532879809789::1712714024::1712761873::1::::<><>::
+plus gray.png::CompressedTexture2D::3510161175217123506::1712714024::1712761873::1::::<><>::
+plus white.png::CompressedTexture2D::6125742302848577078::1712714024::1712761873::1::::<><>::
+plus.png::CompressedTexture2D::1436573462264774797::1712714024::1712761873::1::::<><>::
+red-trash-can-icon.png::CompressedTexture2D::5176883237673100964::1712714024::1712761873::1::::<><>::
+settings_cog_blue.png::CompressedTexture2D::1810096938157068414::1712714024::1712761873::1::::<><>::
+settings_cog_gray.png::CompressedTexture2D::5142865587980473918::1712714024::1712761873::1::::<><>::
+settings_cog_icon_178923.png::CompressedTexture2D::786791895287338477::1712714024::1712761873::1::::<><>::
+::res://addons/TemplateSaver/Scenes/::1712714024
+BISceneUI.tscn::PackedScene::2302098533534967082::1712714024::0::1::::<><>::res://addons/TemplateSaver/Code/DoubleClick.gd<>uid://bow4cj2twp8y0::::res://addons/TemplateSaver/Images/PackedScene.png
+FileManager.tscn::PackedScene::942820277370521147::1712714024::0::1::::<><>::
+SceneUI.tscn::PackedScene::1514595721115329238::1712714024::0::1::::<><>::res://addons/TemplateSaver/Code/DoubleClick.gd<>uid://bow4cj2twp8y0::::res://addons/TemplateSaver/Images/PackedScene.png<>res://addons/TemplateSaver/Code/RemoveScene.gd<>uid://cf0yrmhsicvjo::::res://addons/TemplateSaver/Images/red-trash-can-icon.png
+SettingsMenu.tscn::PackedScene::5184458478850087880::1712714024::0::1::::<><>::res://addons/TemplateSaver/Code/DragSettings.gd<>res://addons/TemplateSaver/Code/SettingsManager.gd<>uid://3msh86x0yl68::::res://addons/TemplateSaver/Images/close_icon_red.png<>uid://djfo3yavg6eva::::res://addons/TemplateSaver/Images/close_icon_blue.png<>uid://8dcg2arthixt::::res://addons/TemplateSaver/Images/close_icon_gray.png<>res://addons/TemplateSaver/Code/CloseSettings.gd
+TemplateDock.tscn::PackedScene::2929206036376571123::1712714024::0::1::::<><>::uid://ctjmc0lvqchfa::::res://addons/TemplateSaver/Images/plus white.png<>uid://bfxgf7ub3w8dd::::res://addons/TemplateSaver/Images/plus blue.png<>uid://bqal3va04s6m5::::res://addons/TemplateSaver/Images/plus gray.png<>res://addons/TemplateSaver/Code/AddButton.gd<>uid://72fhx3u2t68e::::res://addons/TemplateSaver/Scenes/BISceneUI.tscn<>uid://lhel21v2ygf2::::res://addons/TemplateSaver/Images/settings_cog_icon_178923.png<>res://addons/TemplateSaver/Code/OpenSettings.gd<>uid://013bdefyu5u5::::res://addons/TemplateSaver/Images/settings_cog_blue.png<>res://addons/TemplateSaver/Code/BIDoubleClick.gd<>uid://cfjiilbwrgkru::::res://addons/TemplateSaver/Images/settings_cog_gray.png
+::res://addons/TemplateSaver/Scenes/Templates/::1712714024
+::res://archivo de guardado/::1712714024
+savedata.json::JSON::-1::1712714024::0::1::::<><>::
+::res://backups de escenas/::1712714024
+foquito.tscn::PackedScene::9061288225503808002::1712714024::0::1::::<><>::res://scripts estupidos/foquito.gd<>uid://bubvgd7grkkve::::res://imagenes/foquito.png
+Game.tscn::PackedScene::3282333974460338395::1712714024::0::1::::<><>::res://scripts estupidos/Game.gd<>uid://bhlwpiu01q6i7::::res://imagenes/brain-512758_640.webp<>res://scripts estupidos/wasamamaya.gd
+MainMenu.tscn::PackedScene::7563642099387724174::1712714024::0::1::::<><>::res://scripts estupidos/MainMenu.gd
+MenuBackground.tscn::PackedScene::-1::1712714024::0::1::::<><>::res://addons/cloud/Cloud.gdshader<>res://addons/cloud/CageMesh.tres<>res://addons/cloud/Cloud.gd
+tangananica.tscn::PackedScene::5974399911489427578::1712714024::0::1::::<><>::res://scripts estupidos/tangananica.gd
+tienda.gd::GDScript::-1::1712714024::0::1::::<>Control<>::
+tienda.tscn::PackedScene::8525827653910860108::1712714024::0::1::::<><>::res://backups de scripts/tienda.gd
+::res://escenas perronas/::1712872812
+foquito.tscn::PackedScene::9061288225503808002::1712872812::0::1::::<><>::res://scripts estupidos/foquito.gd<>uid://bubvgd7grkkve::::res://imagenes/Light-Bulb-Free-PNG-Image.png
+Game.tscn::PackedScene::3282333974460338395::1712872812::0::1::::<><>::res://scripts estupidos/Game.gd<>uid://bhlwpiu01q6i7::::res://imagenes/brain-512758_640.webp<>res://scripts estupidos/wasamamaya.gd<>uid://dtp8evakmj5lw::::res://escenas perronas/tienda.tscn<>uid://fap6keupa52x::::res://WEBOS/MATRIX.png
+MainMenu.tscn::PackedScene::7563642099387724174::1712872812::0::1::::<><>::res://scripts estupidos/MainMenu.gd
+MenuBackground.tscn::PackedScene::-1::1712714024::0::1::::<><>::res://addons/cloud/Cloud.gdshader<>res://addons/cloud/CageMesh.tres<>res://addons/cloud/Cloud.gd
+tangananica.tscn::PackedScene::5974399911489427578::1712872812::0::1::::<><>::res://scripts estupidos/tangananica.gd
+tienda.tscn::PackedScene::8525827653910860108::1712872812::0::1::::<><>::res://scripts estupidos/tienda.gd
+::res://fondo/::1712871590
+::res://fondo/iloveimg-converted (3)/::1712871605
+MATRIX.png::CompressedTexture2D::3110319551765194579::1712792556::1712792558::1::::<><>::
+::res://imagenes/::1712761873
+brain-512758_640.webp::CompressedTexture2D::2901813757457605740::1712714024::1712714024::1::::<><>::
+foquito.png::CompressedTexture2D::3793547913118860950::1712714024::1712761873::1::::<><>::
+Light-Bulb-Free-PNG-Image.png::CompressedTexture2D::3793547913118860950::1712714024::1712714024::1::::<><>::
+manguito.webp::CompressedTexture2D::7426981729847786128::1712714024::1712714024::1::::<><>::
+::res://Pictures/::1712714024
+asdas.png::CompressedTexture2D::6832707603439017069::1712714024::1712714024::1::::<><>::
+descuento.png::CompressedTexture2D::8264938947250750899::1712714024::1712714024::1::::<><>::
+Descuentoo.png::CompressedTexture2D::5078733976830472170::1712714024::1712714024::1::::<><>::
+desktop.ini::TextFile::-1::1712714024::0::1::::<><>::
+::res://Pictures/Camera Roll/::1712714024
+desktop.ini::TextFile::-1::1712714024::0::1::::<><>::
+::res://Pictures/Saved Pictures/::1712714024
+desktop.ini::TextFile::-1::1712714024::0::1::::<><>::
+::res://scripts estupidos/::1712872329
+foquito.gd::GDScript::-1::1712714024::0::1::::<>RigidBody2D<>::
+Game.gd::GDScript::-1::1712714024::0::1::::<>Control<>::
+GameData.gd::GDScript::-1::1712714024::0::1::::GameData<>Node<>::
+MainMenu.gd::GDScript::-1::1712714024::0::1::::<>Control<>::
+PuntosManager.gd::GDScript::-1::1712714024::0::1::::<>Node<>::
+tangananica.gd::GDScript::-1::1712714024::0::1::::<>Control<>::
+tienda.gd::GDScript::-1::1712872329::0::1::::<>Control<>::
+wasamamaya.gd::GDScript::-1::1712853212::0::1::::GameData<>Node<>::
+::res://sonidos/::1712714024
+metal-pipe-falling-sound-effect-made-with-Voicemod.mp3::AudioStreamMP3::1592637310521525159::1712714024::1712714024::1::::<><>::
+::res://WEBOS/::1712792603
+MATRIX.png::CompressedTexture2D::351910865034218901::1712792210::1712792603::1::::<><>::
