@@ -1,0 +1,81 @@
+[gd_scene load_steps=6 format=3 uid="uid://cp075b5fel40p"]
+
+[ext_resource type="Script" path="res://noticias.gd" id="1_jpo3f"]
+[ext_resource type="Texture2D" uid="uid://bstntb788vr8a" path="res://imagenes/NEGRO.png" id="2_v1x7b"]
+
+[sub_resource type="Animation" id="Animation_hdpxw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 12)]
+}
+
+[sub_resource type="Animation" id="Animation_d4ka0"]
+resource_name = "scroll"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 12), Vector2(300, 12)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:z_index")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 1,
+"values": []
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uvurg"]
+_data = {
+"RESET": SubResource("Animation_hdpxw"),
+"scroll": SubResource("Animation_d4ka0")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_jpo3f")
+
+[node name="noticia" type="Label" parent="."]
+z_index = -1
+clip_contents = true
+offset_top = 12.0
+offset_right = 70.9997
+offset_bottom = 35.0
+text = "a"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="noticia"]
+libraries = {
+"": SubResource("AnimationLibrary_uvurg")
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="Negro" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(567, 22)
+scale = Vector2(1.9022, 0.0642023)
+texture = ExtResource("2_v1x7b")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
