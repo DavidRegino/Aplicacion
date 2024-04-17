@@ -73,7 +73,6 @@ wait_time = 5.0
 autostart = true
 
 [node name="Negro" type="Sprite2D" parent="."]
-modulate = Color(1, 1, 1, 0)
 position = Vector2(567, 22)
 scale = Vector2(1.9022, 0.0642023)
 texture = ExtResource("2_v1x7b")

@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713317288
+::res://::1713317477
 button.png::CompressedTexture2D::1169298611927355728::1712887318::1712887318::1::::<><>::
-default_env.tres::Environment::2499690485154921058::1713317250::0::1::::<><>::
+default_env.tres::Environment::2499690485154921058::1713317454::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1712887318::0::1::::<><>::
 foquito.gd::GDScript::-1::1712887318::0::1::::<>RigidBody2D<>::
 foquito.tscn::PackedScene::9061288225503808002::1712887318::0::1::::<><>::res://foquito.gd<>uid://bubvgd7grkkve::::res://imagenes/foquito.png
@@ -63,14 +63,14 @@ MenuBackground.tscn::PackedScene::-1::1712887318::0::1::::<><>::res://addons/clo
 tangananica.tscn::PackedScene::5974399911489427578::1712887318::0::1::::<><>::res://scripts estupidos/tangananica.gd
 tienda.gd::GDScript::-1::1712887318::0::1::::<>Control<>::
 tienda.tscn::PackedScene::8525827653910860108::1712887318::0::1::::<><>::res://backups de scripts/tienda.gd
-::res://escenas perronas/::1713317250
-foquito.tscn::PackedScene::9061288225503808002::1713317250::0::1::::<><>::res://scripts estupidos/foquito.gd<>uid://bubvgd7grkkve::::res://imagenes/Light-Bulb-Free-PNG-Image.png
-Game.tscn::PackedScene::3282333974460338395::1713317249::0::1::::<><>::res://scripts estupidos/Game.gd<>uid://bhlwpiu01q6i7::::res://imagenes/brain-512758_640.webp<>res://scripts estupidos/wasamamaya.gd<>uid://dtp8evakmj5lw::::res://escenas perronas/tienda.tscn<>uid://fap6keupa52x::::res://WEBOS/MATRIX.png<>uid://cp075b5fel40p::::res://escenas perronas/noticias.tscn
-MainMenu.tscn::PackedScene::7563642099387724174::1713317249::0::1::::<><>::res://scripts estupidos/MainMenu.gd
+::res://escenas perronas/::1713317454
+foquito.tscn::PackedScene::9061288225503808002::1713317453::0::1::::<><>::res://scripts estupidos/foquito.gd<>uid://bubvgd7grkkve::::res://imagenes/Light-Bulb-Free-PNG-Image.png
+Game.tscn::PackedScene::3282333974460338395::1713317453::0::1::::<><>::res://scripts estupidos/Game.gd<>uid://bhlwpiu01q6i7::::res://imagenes/brain-512758_640.webp<>res://scripts estupidos/wasamamaya.gd<>uid://dtp8evakmj5lw::::res://escenas perronas/tienda.tscn<>uid://fap6keupa52x::::res://WEBOS/MATRIX.png<>uid://cp075b5fel40p::::res://escenas perronas/noticias.tscn
+MainMenu.tscn::PackedScene::7563642099387724174::1713317453::0::1::::<><>::res://scripts estupidos/MainMenu.gd
 MenuBackground.tscn::PackedScene::-1::1712887318::0::1::::<><>::res://addons/cloud/Cloud.gdshader<>res://addons/cloud/CageMesh.tres<>res://addons/cloud/Cloud.gd
-noticias.tscn::PackedScene::5879280082494327821::1713317250::0::1::::<><>::res://noticias.gd<>uid://bstntb788vr8a::::res://imagenes/NEGRO.png
-tangananica.tscn::PackedScene::5974399911489427578::1713317249::0::1::::<><>::res://scripts estupidos/tangananica.gd
-tienda.tscn::PackedScene::8525827653910860108::1713317250::0::1::::<><>::res://scripts estupidos/tienda.gd
+noticias.tscn::PackedScene::5879280082494327821::1713317454::0::1::::<><>::res://noticias.gd<>uid://bstntb788vr8a::::res://imagenes/NEGRO.png
+tangananica.tscn::PackedScene::5974399911489427578::1713317453::0::1::::<><>::res://scripts estupidos/tangananica.gd
+tienda.tscn::PackedScene::8525827653910860108::1713317453::0::1::::<><>::res://scripts estupidos/tienda.gd
 ::res://fondo/::1712887318
 ::res://fondo/iloveimg-converted (3)/::1712934510
 MATRIX.png::CompressedTexture2D::3110319551765194579::1712887318::1712934510::1::::<><>::
