@@ -1,0 +1,94 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtp8evakmj5lw"]
+
+[ext_resource type="Script" path="res://scripts estupidos/tienda.gd" id="1_u1rnp"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u1rnp")
+
+[node name="Construcciones" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CPC1" type="Button" parent="Construcciones"]
+layout_mode = 2
+text = "+1 CPC  [20]"
+
+[node name="CPC2" type="Button" parent="Construcciones"]
+layout_mode = 2
+text = "+5 CPC [150]"
+
+[node name="CPC3" type="Button" parent="Construcciones"]
+layout_mode = 2
+text = "+20 CPC  [1400]"
+
+[node name="CPC4" type="Button" parent="Construcciones"]
+layout_mode = 2
+text = "+125 CPC  [12000]"
+
+[node name="CPC5" type="Button" parent="Construcciones"]
+layout_mode = 2
+text = "+500 CPC  [200000]"
+
+[node name="TiendaSegundos" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 212.0
+offset_top = 14.0
+offset_right = 346.0
+offset_bottom = 185.0
+
+[node name="CPS1" type="Button" parent="TiendaSegundos"]
+layout_mode = 2
+text = "+1 CPS  [20]"
+
+[node name="CPS2" type="Button" parent="TiendaSegundos"]
+layout_mode = 2
+text = "+5 CPS  [150]"
+
+[node name="CPS3" type="Button" parent="TiendaSegundos"]
+layout_mode = 2
+text = "+20 CPS  [1400]"
+
+[node name="CPS4" type="Button" parent="TiendaSegundos"]
+layout_mode = 2
+text = "+125 CPS  [12000]"
+
+[node name="CPS5" type="Button" parent="TiendaSegundos"]
+layout_mode = 2
+text = "+500 CPS [20000]"
+
+[node name="Valores" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 100.0
+offset_right = 512.0
+offset_bottom = 150.0
+
+[node name="CPC" type="Label" parent="Valores"]
+layout_mode = 2
+text = "CPC:"
+
+[node name="CPS" type="Label" parent="Valores"]
+layout_mode = 2
+text = "CPS: "
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="pressed" from="Construcciones/CPC1" to="." method="_on_cpc_1_pressed"]
+[connection signal="pressed" from="Construcciones/CPC2" to="." method="_on_cpc_2_pressed"]
+[connection signal="pressed" from="Construcciones/CPC3" to="." method="_on_cpc_3_pressed"]
+[connection signal="pressed" from="Construcciones/CPC4" to="." method="_on_cpc_4_pressed"]
+[connection signal="pressed" from="Construcciones/CPC5" to="." method="_on_cpc_5_pressed"]
+[connection signal="pressed" from="TiendaSegundos/CPS1" to="." method="_on_cps_1_pressed"]
+[connection signal="pressed" from="TiendaSegundos/CPS2" to="." method="_on_cps_2_pressed"]
+[connection signal="pressed" from="TiendaSegundos/CPS3" to="." method="_on_cps_3_pressed"]
+[connection signal="pressed" from="TiendaSegundos/CPS4" to="." method="_on_cps_4_pressed"]
+[connection signal="pressed" from="TiendaSegundos/CPS5" to="." method="_on_cps_5_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

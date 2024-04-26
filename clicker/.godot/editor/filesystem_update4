@@ -1,2 +1,7 @@
 res://default_env.tres
+res://escenas perronas/tienda.tscn
+res://scripts estupidos/tienda.gd
+res://escenas perronas/MainMenu.tscn
+res://escenas perronas/Game.tscn
+res://escenas perronas/foquito.tscn
 res://escenas perronas/noticias.tscn

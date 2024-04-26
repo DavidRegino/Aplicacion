@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtp8evakmj5lw"]
+
+[ext_resource type="Script" path="res://scripts estupidos/boton_tienda.gd" id="1_bl1m8"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 126.0
+offset_right = 307.0
+offset_bottom = 334.0
+script = ExtResource("1_bl1m8")
+
+[node name="Valores" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 100.0
+offset_right = 512.0
+offset_bottom = 150.0
+
+[node name="CPC" type="Label" parent="Valores"]
+layout_mode = 2
+text = "CPC:"
+
+[node name="CPS" type="Label" parent="Valores"]
+layout_mode = 2
+text = "CPS: "
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
