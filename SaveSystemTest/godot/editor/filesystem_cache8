@@ -1,0 +1,7 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1714527926
+icon.svg::CompressedTexture2D::3881250995810271586::1714442309::1714525797::1::::<><>::
+::res://SaveAndLoad/::1714527891
+main.gd::GDScript::-1::1714527044::0::1::::<>Node2D<>::
+main.tscn::PackedScene::7094335716948522557::1714527891::0::1::::<><>::res://SaveAndLoad/SSAL.gd<>uid://bvkdvwgqnsmj7::::res://icon.svg
+SSAL.gd::GDScript::-1::1714527874::0::1::::<>Node2D<>::

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8csw4yjbsewb"]
+
+[ext_resource type="Script" path="res://SaveAndLoad/SSAL.gd" id="1_3tkh0"]
+[ext_resource type="Texture2D" uid="uid://bvkdvwgqnsmj7" path="res://icon.svg" id="1_r17sm"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_3tkh0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(517, 292)
+texture = ExtResource("1_r17sm")
