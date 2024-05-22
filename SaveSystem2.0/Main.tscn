@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsomkiss1740t"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_ri20c"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ri20c")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(14.1826, 6.61616)
+
+[node name="SaveButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(0.298871, 0.652688)
+text = "Guardar"
+
+[node name="LoadButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_top = 23.0
+offset_right = 60.0
+offset_bottom = 54.0
+scale = Vector2(0.360583, 0.67971)
+text = "Cargar"
+
+[node name="AddButton" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 25.1717
+offset_top = 25.0901
+offset_right = 111.172
+offset_bottom = 56.0901
+scale = Vector2(0.247811, 0.558631)
+text = "Aumentar"
+
+[connection signal="pressed" from="Control/SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="Control/LoadButton" to="." method="_on_load_button_pressed"]
+[connection signal="pressed" from="Control/AddButton" to="." method="_on_add_button_pressed"]
