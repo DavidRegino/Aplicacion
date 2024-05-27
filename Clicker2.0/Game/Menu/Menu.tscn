@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf3xmafw1koif"]
+
+[ext_resource type="Script" path="res://Game/Menu/Scripts/Menu.gd" id="1_xv83w"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_xv83w")
+
+[node name="Play" type="Button" parent="."]
+offset_left = 531.0
+offset_top = 281.0
+offset_right = 580.0
+offset_bottom = 312.0
+scale = Vector2(-7.57067, -2.88913)
+text = "Jugar"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]

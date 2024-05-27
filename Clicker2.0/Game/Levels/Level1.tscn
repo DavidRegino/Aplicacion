@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ca1djyk0nklqo"]
+
+[ext_resource type="Texture2D" uid="uid://dvhup5h8msp0u" path="res://Game/Assets/Levels/Level1/Void.png" id="1_keltj"]
+[ext_resource type="PackedScene" uid="uid://dbx1pvsavvy3g" path="res://Game/Clicker/Counter.tscn" id="3_0ag5r"]
+[ext_resource type="Texture2D" uid="uid://blsm1d57frxj3" path="res://Game/Assets/Levels/Level1/VoidParticle.png" id="3_gk147"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="TextureLevel" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_keltj")
+
+[node name="ParticlesLevel" type="CPUParticles2D" parent="."]
+position = Vector2(571, 648)
+amount = 32
+speed_scale = 0.15
+texture = ExtResource("3_gk147")
+emission_shape = 3
+emission_rect_extents = Vector2(576, 648)
+spread = 80.0
+
+[node name="Counter" parent="." instance=ExtResource("3_0ag5r")]

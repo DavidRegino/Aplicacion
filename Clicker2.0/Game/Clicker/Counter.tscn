@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbx1pvsavvy3g"]
+
+[ext_resource type="Texture2D" uid="uid://uun56ig4lk3d" path="res://Game/Assets/Levels/Level1/Brain.png" id="1_o5x6n"]
+[ext_resource type="Script" path="res://Game/Clicker/Scripts/Counter.gd" id="2_7bg35"]
+[ext_resource type="PackedScene" uid="uid://bslk733s2ahai" path="res://Game/Store/Store.tscn" id="4_juyir"]
+[ext_resource type="PackedScene" uid="uid://crdjtyq1wya6s" path="res://Game/Data/Counts.tscn" id="4_ryghk"]
+
+[node name="Counter" type="Sprite2D"]
+position = Vector2(576, 324)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_o5x6n")
+script = ExtResource("2_7bg35")
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(2, 0)
+polygon = PackedVector2Array(-260, 310, -321.183, 263.124, -330, 214, -330, 190, -390, 208, -560.9, 215.126, -600, 180, -618, 148, -642, 68, -642, 56, -636, 40, -666, 22, -540, -250, 68, -364, 602, -170, 596, 160, 400, 286, -2, 290, -16, 280, -22, 286, -58, 310, -84, 310, -106, 304, -126, 306, -172, 320, -208, 320, -230, 308)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+
+[node name="AutoSave" type="Timer" parent="."]
+wait_time = 15.0
+autostart = true
+
+[node name="Store" parent="." instance=ExtResource("4_juyir")]
+offset_left = -6.0
+offset_top = -658.0
+offset_right = 34.0
+offset_bottom = -618.0
+
+[node name="Counts" parent="." instance=ExtResource("4_ryghk")]
+offset_left = -1132.0
+offset_top = -644.0
+offset_right = -1092.0
+offset_bottom = -604.0
+
+[node name="Cps" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="AutoSave" to="." method="_on_auto_save_timeout"]
+[connection signal="timeout" from="Cps" to="." method="_on_cps_timeout"]

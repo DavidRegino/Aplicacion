@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://bslk733s2ahai"]
+
+[ext_resource type="Script" path="res://Game/Store/Scripts/Store.gd" id="1_f27ul"]
+
+[node name="Store" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_f27ul")
+
+[node name="Items" type="MenuButton" parent="."]
+layout_mode = 0
+offset_left = 860.0
+offset_top = 3.0
+offset_right = 921.0
+offset_bottom = 34.0
+scale = Vector2(4.83509, 4.33156)
+text = "Tienda"
+item_count = 2
+popup/item_0/text = "Clicks por click +1 :  500Iq "
+popup/item_0/id = 0
+popup/item_1/text = "Clicks por segundo +1  : 250Iq "
+popup/item_1/id = 1
