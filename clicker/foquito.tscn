@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2dmdf0i5cwhm"]
+
+[ext_resource type="Script" path="res://foquito.gd" id="1_1aj6x"]
+[ext_resource type="Texture2D" uid="uid://bubvgd7grkkve" path="res://imagenes/foquito.png" id="2_mn7nb"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(151, 113)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(68, 41)
+script = ExtResource("1_1aj6x")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+position = Vector2(-63, -43)
+scale = Vector2(0.0674232, 0.0689441)
+texture = ExtResource("2_mn7nb")
+
+[connection signal="timeout" from="Timer" to="RigidBody2D" method="_on_timer_timeout"]
