@@ -17,7 +17,7 @@ func _ready():
 func save_game():
 	var game_data = wasamamaya._get_instance()
 	saveLoadSystem.save_game(game_data.score, game_data.cps, game_data.cpc, game_data.level)
-	print("Juego guardado con los datos: score = %d, cps = %d, cpc = %d, level = %d" % [
+	print("Juego guardado con los datos: score = %.1f, cps = %.1f, cpc = %d, level = %d" % [
 		game_data.score, game_data.cps, game_data.cpc, game_data.level 
 	])
 
@@ -26,9 +26,9 @@ func save_game():
 @warning_ignore("unused_parameter")
 func _process(delta):
 	var game_data = wasamamaya._get_instance()
-	$VBoxContainer/Score.text = "IQ: " + str(game_data.score)
-	$VBoxContainer/CPS.text = "CPS: " + str(game_data.cps)
-	$VBoxContainer/CPC.text = "CPC: " + str(game_data.cpc)
+	$VBoxContainer/Score.text = "IQ: " + str(round(game_data.score * 10) / 10)
+	$VBoxContainer/CPS.text = "CPS: " + str(round(game_data.cps * 10) / 10)
+	$VBoxContainer/CPC.text = "CPC: " + str(round(game_data.cpc * 10) / 10)
 	#if game_data.score >= 1000:
 		#print("ganaste")
 		#$Ganaste.visible = true

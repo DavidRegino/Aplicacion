@@ -1,10 +1,10 @@
 extends Control
 
-var construccion = Construcciones.new()
 const wasamamaya = preload("res://scripts estupidos/wasamamaya.gd")
 # Called when the node enters the scene tree for the first time.
+@onready var Objetos = $CPS
 var PopUp
-@onready var Objetos = $Objetos
+
 
 func _ready():
 	var game_data = wasamamaya._get_instance()
@@ -22,7 +22,7 @@ func Tienda(id):
 		0:
 			if game_data.score >= game_data.TiendaCPS:
 				game_data.score -= game_data.TiendaCPS
-				game_data.TiendaCPC = (game_data.TiendaCPC * 1.5)
+				game_data.TiendaCPS = (game_data.TiendaCPS * 1.5)
 				PopUp.set_item_text(0, "CPS +0.1 : " + str(game_data.TiendaCPS))
 				game_data.cps += 0.1
 				print(game_data.cps)

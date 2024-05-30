@@ -10,7 +10,7 @@ var defaultData: Dictionary = {
 var saveFilePath: String = "user://SaveData.json"
 
 # Función para guardar los datos en un archivo JSON
-func save_game(score: int, cps: int, cpc: int, level: int) -> void:
+func save_game(score: float, cps: float, cpc: int, level: int) -> void:
 	var saveData: Dictionary = {
 		"score": score,
 		"cps": cps,

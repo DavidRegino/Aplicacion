@@ -8,8 +8,8 @@ class_name GameData
 static var instance = null
 
 # Variables globales
-var score: int
-var cps: int
+var score: float
+var cps: float
 var cpc: int = 1
 var level: int
 var TiendaCPC: int = 30
@@ -34,22 +34,3 @@ static func _get_instance():
 	if instance == null:
 		instance = GameData.new()
 	return instance
-	
-func get_score():
-	return score
-
-func add_score(points):
-	self.score += points
-	
-func get_CPC_count():
-	return cpc
-
-func increase_CPC_count():
-	self.cpc += 1
-	
-func get_CPS_count():
-	return cps
-
-func increase_CPS_count():
-	self.cps += 1
-
