@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsw6twdgacxu5"]
+
+[ext_resource type="Script" path="res://scripts estupidos/boton.gd" id="1_j85ul"]
+[ext_resource type="Texture2D" uid="uid://bhlwpiu01q6i7" path="res://imagenes/brain-512758_640.webp" id="1_l1jq0"]
+[ext_resource type="AudioStream" uid="uid://d3bpk0wsaxvpg" path="res://sonidos/gross-slimy-goo-foley-1-164289.mp3" id="3_a0a5v"]
+
+[node name="Boton" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1086.0
+offset_top = 566.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j85ul")
+
+[node name="boton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 4.0
+offset_right = 211.0
+offset_bottom = 162.0
+icon = ExtResource("1_l1jq0")
+expand_icon = true
+
+[node name="sonido_boton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_a0a5v")
+
+[connection signal="pressed" from="boton" to="." method="_on_boton_pressed"]
