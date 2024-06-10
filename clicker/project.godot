@@ -15,6 +15,10 @@ run/main_scene="res://escenas perronas/Inicio.tscn"
 config/features=PackedStringArray("4.2")
 config/icon="res://icon.png"
 
+[autoload]
+
+Data="*res://scripts estupidos/wasamamaya.gd"
+
 [display]
 
 window/size/viewport_width=1280
