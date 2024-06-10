@@ -33,11 +33,3 @@ popup/item_4/text = ""
 popup/item_4/id = 4
 popup/item_5/text = ""
 popup/item_5/id = 5
-
-[node name="CPC" type="MenuButton" parent="."]
-layout_mode = 0
-offset_left = 103.0
-offset_top = -2.0
-offset_right = 188.0
-offset_bottom = 35.0
-text = "Mejoras"

@@ -17,20 +17,22 @@ func _ready():
 	game_data.CPS4 = saveData["CPS4"]
 	game_data.CPS5 = saveData["CPS5"]
 	game_data.CPS6 = saveData["CPS6"]
+	game_data.M1 = saveData["M1"]
 	game_data.ca1 = saveData["ca1"]
 	game_data.ca2 = saveData["ca2"]
 	game_data.ca3 = saveData["ca3"]
 	game_data.ca4 = saveData["ca4"]
 	game_data.ca5 = saveData["ca5"]
 	game_data.ca6 = saveData["ca6"]
+	game_data.cm1 = saveData["cm1"]
 	print("Datos iniciales cargados: ", saveData)
 
 # Función para guardar el juego
 func save_game():
 	var game_data = wasamamaya._get_instance()
-	saveLoadSystem.save_game(game_data.score, game_data.cps, game_data.cpc, game_data.level, game_data.CPS1, game_data.CPS2, game_data.CPS3, game_data.CPS4, game_data.CPS5, game_data.CPS6, game_data.ca1, game_data.ca2, game_data.ca3, game_data.ca4, game_data.ca5, game_data.ca6)
-	print("Juego guardado con los datos: score = %.1f, cps = %.1f, cpc = %d, level = %d, CPS1 = %d, CPS2 = %d, CPS3 = %d, CPS4 = %d, CPS5 = %d, CPS6 = %d, ca1 = %d, ca2 = %d, ca3 = %d, ca4 = %d, ca5 = %d, ca6 = %d" % [
-		game_data.score, game_data.cps, game_data.cpc, game_data.level, game_data.CPS1, game_data.CPS2, game_data.CPS3, game_data.CPS4, game_data.CPS5, game_data.CPS6, game_data.ca1, game_data.ca2, game_data.ca3, game_data.ca4, game_data.ca5, game_data.ca6
+	saveLoadSystem.save_game(game_data.score, game_data.cps, game_data.cpc, game_data.level, game_data.CPS1, game_data.CPS2, game_data.CPS3, game_data.CPS4, game_data.CPS5, game_data.CPS6, game_data.M1, game_data.ca1, game_data.ca2, game_data.ca3, game_data.ca4, game_data.ca5, game_data.ca6, game_data.cm1)
+	print("Juego guardado con los datos: score = %.1f, cps = %.1f, cpc = %d, level = %d, CPS1 = %d, CPS2 = %d, CPS3 = %d, CPS4 = %d, CPS5 = %d, CPS6 = %d, M1 = %d, ca1 = %d, ca2 = %d, ca3 = %d, ca4 = %d, ca5 = %d, ca6 = %d, cm1 = %d" % [
+		game_data.score, game_data.cps, game_data.cpc, game_data.level, game_data.CPS1, game_data.CPS2, game_data.CPS3, game_data.CPS4, game_data.CPS5, game_data.CPS6, game_data.M1, game_data.ca1, game_data.ca2, game_data.ca3, game_data.ca4, game_data.ca5, game_data.ca6, game_data.cm1
 	])
 
 func _on_Timer_timeout():

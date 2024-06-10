@@ -21,13 +21,17 @@ var CPS4: int
 var CPS5: int
 var CPS6: int
 
-#Variables cantidad de construcciones
+#Variables cantidad de construcciones y mejoras
 var ca1: int
 var ca2: int
 var ca3: int
 var ca4: int
 var ca5: int
 var ca6: int
+var cm1: int
+
+#Variables de Mejoras
+var M1: int
 
 func load_from_dict(data: Dictionary):
 	score = data.get("score")
@@ -40,12 +44,14 @@ func load_from_dict(data: Dictionary):
 	CPS4 = data.get("CPS4")
 	CPS5 = data.get("CPS5")
 	CPS6 = data.get("CPS6")
+	M1 = data.get("M1")
 	ca1 = data.get("ca1")
 	ca2 = data.get("ca2")
 	ca3 = data.get("ca3")
 	ca4 = data.get("ca4")
 	ca5 = data.get("ca5")
 	ca6 = data.get("ca6")
+	cm1 = data.get("cm1")
 	
 # Función para convertir las variables a un diccionario
 func to_dict() -> Dictionary:
@@ -68,6 +74,7 @@ func to_dict() -> Dictionary:
 		"ca4": ca4,
 		"ca5": ca5,
 		"ca6": ca6,
+		"cm1": cm1,
 	}
 # Función para obtener la instancia del Singleton
 static func _get_instance():
